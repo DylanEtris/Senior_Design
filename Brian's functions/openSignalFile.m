@@ -1,4 +1,5 @@
 function wave = openSignalFile(filename)
-fd = fopen(filename);
-wave = fread(fd, [2,inf], 'double');
+wave = importdata(filename, '%d');
+wave = split(wave);
+wave = complex(str2double(wave(:,1)), str2double(wave(:,2)));
 end

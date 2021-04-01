@@ -1,0 +1,16 @@
+function x = DecodeHackRF(filePath)
+x1 = -0.512 * 128 / 128;
+x2 = 0.512 * 127 / 128;
+n = 256;
+y = linspace(x1,x2,n);
+
+fileID = fopen(filePath);
+data = fread (fileID, [2, 500], 'uint8');
+realData = data(:,1);
+complexData = data(:,2);
+for i = 0:length(realData)
+    realData(i) = y(realData(i));
+    complexData(i) = y(eData(i));
+end
+x = data;
+end

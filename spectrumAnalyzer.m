@@ -5,7 +5,8 @@ function spectrumAnalyzer(sampleRate, signal)
     scope.Title = 'Spectrum of Signal';     
     
     scope(signal);
-
-    % Release the System objects
+    while 1
+    end
+%    Release the System objects
     release(scope);
 end

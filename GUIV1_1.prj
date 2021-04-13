@@ -1,6 +1,6 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
   <configuration file="C:\Users\Dylan\Documents\GitHub\Senior_Design\GUIV1_1.prj" location="C:\Users\Dylan\Documents\GitHub\Senior_Design" name="GUIV1_1" target="target.ezdeploy.standalone" target-name="Application Compiler">
-    <param.appname>GUIV1</param.appname>
+    <param.appname>SignalClassificationAlgorithm</param.appname>
     <param.icon />
     <param.icons />
     <param.version>1.0</param.version>
@@ -11,7 +11,7 @@
     <param.description />
     <param.screenshot />
     <param.guid />
-    <param.installpath.string>\GUIV1\</param.installpath.string>
+    <param.installpath.string>\SignalClassificationAlgorithm\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
@@ -36,7 +36,12 @@
     <param.native.matlab>false</param.native.matlab>
     <param.checkbox>false</param.checkbox>
     <param.example />
-    <param.help.text />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
     <unset>
       <param.icon />
       <param.icons />
@@ -73,7 +78,6 @@
       <param.native.matlab />
       <param.checkbox />
       <param.example />
-      <param.help.text />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\GUIV1.mlapp</file>
@@ -82,8 +86,8 @@
     <fileset.package />
     <fileset.depfun />
     <build-deliverables>
+      <file location="${PROJECT_ROOT}\GUIV1_1\for_testing" name="SignalClassificationAlgorithm.exe" optional="false">C:\Users\Dylan\Documents\GitHub\Senior_Design\GUIV1_1\for_testing\SignalClassificationAlgorithm.exe</file>
       <file location="${PROJECT_ROOT}\GUIV1_1\for_testing" name="splash.png" optional="false">C:\Users\Dylan\Documents\GitHub\Senior_Design\GUIV1_1\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\GUIV1_1\for_testing" name="GUIV1.exe" optional="false">C:\Users\Dylan\Documents\GitHub\Senior_Design\GUIV1_1\for_testing\GUIV1.exe</file>
       <file location="${PROJECT_ROOT}\GUIV1_1\for_testing" name="readme.txt" optional="true">C:\Users\Dylan\Documents\GitHub\Senior_Design\GUIV1_1\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
